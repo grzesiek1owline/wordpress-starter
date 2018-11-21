@@ -6,6 +6,7 @@ const DIRS = {
   source: `./source`,
   public: `./public`,
   build: `./theme`,
+  theme: `${WP_PATH}/wp-content/themes/theme`,
 };
 
 const FILES = {
@@ -37,7 +38,7 @@ const FILES = {
   },
   theme: {
     source: `${DIRS.build}/**/*`,
-    destination: `${WP_PATH}/wp-content/themes/${DIRS.build}`,
+    destination: `${DIRS.theme}`,
   },
 };
 
